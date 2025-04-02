@@ -24,7 +24,7 @@ jobs:
       # Subir os serviços com Docker Compose
       - name: Start Docker Compose
         run: |
-          docker-compose --env-file .env -f infra/compose.yaml up -d
+          docker-compose -f infra/compose.yaml up -d
 
       # Verificar os serviços em execução
       - name: Check running containers
